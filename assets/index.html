@@ -9,36 +9,34 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
 <header class="header">
 
+    <div class="top">
+            <span class="logo">ZET</span>
+            <nav role="navigation" id="navigation" class="nav">
+                <label for="nav-btn" class="label">menu</label>
+                    <button data-collapse data-target="#navigation" id="nav-btn" class="toggle">
+                        <span class="icon-hamburger"><i class="fas fa-bars"></i></span>
+                    </button>
+                <div class="nav__menu">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#clients" class="nav-link">Clients</a>
+                    <a href="#team" class="nav-link">Team</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </nav>
+    </div>
 
-            <div class="top">
-                    <span class="logo">ZET</span>
-
-                    <nav role="navigation" id="navigation" class="nav">
-                        <label for="nav-btn" class="label">menu</label>
-                            <button data-collapse data-target="#navigation" id="nav-btn" class="toggle">
-                                <span class="icon-hamburger"><i class="fas fa-bars"></i></span>
-                            </button>
-                        <div class="nav__menu">
-                            <a href="#" class="nav-link">Home</a>
-                            <a href="#services" class="nav-link">Services</a>
-                            <a href="#clients" class="nav-link">Clients</a>
-                            <a href="#team" class="nav-link">Team</a>
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </div>
-                    </nav>
-
-            </div>
-
-<div class="header__flex-container">
-    <div class="head-title">
-        <h1 class="headline1 header__headline1">Something Nothing</h1>
-        <p class="subtitle1 header__subtitle1">Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi eleifend tellus.</p></div>
-    <button type="button" class="btn">LET’S TALK</button>
-    <div class="header__arrow"><a><i class="fas fa-chevron-circle-down"></i></a></div>
-</div>
+    <div class="header__flex-container">
+        <div class="head-title">
+            <h1 class="headline1 header__headline1">Something Nothing</h1>
+            <p class="subtitle1 header__subtitle1">Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi eleifend tellus.</p></div>
+        <button type="button" class="btn">LET’S TALK</button>
+        <div class="header__arrow"><a><i class="fas fa-chevron-circle-down"></i></a></div>
+    </div>
 </header>
 
 <section class="section services">
@@ -199,12 +197,30 @@
     </div>
 </section>
 <section class="contacts">
-    <div class="contacts__map"><div style="overflow:hidden;width: 700px;height: 440px;"><iframe width="700" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Moscow%2C%20Russia+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
-    <div class="contacts__form">
-        <form class="form ">
+    <iframe class="contacts__map" src="https://maps.google.com/maps?hl=en&amp;q=Moscow%2C%20Russia+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <form class="form contacts__form" method="post" action="">
+        <ul class="inputs-list">
+            <li class="inputs-list__item">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="inputs-list__field">
+            </li>
+            <li class="inputs-list__item">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="inputs-list__field">
+            </li>
+            <li class="inputs-list__item">
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" name="phone" class="inputs-list__field">
+            </li>
+            <li class="inputs-list__item">
+                <label for="message">Message</label>
+                <textarea rows="10" id="message" class="inputs-list__textarea"></textarea>
+            </li>
 
-        </form>
-    </div>
+        </ul>
+        <button type="submit" class="btn form__btn">Submit</button>
+    </form>
+
 </section>
 <footer>
 
